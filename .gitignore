@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env folders (adjust names if yours are different)
+env/
+envenv/
+venv/
+
+# IDE/editor
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
