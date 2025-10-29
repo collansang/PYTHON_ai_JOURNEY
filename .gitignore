@@ -6,8 +6,6 @@ __pycache__/
 
 # Virtual env folders (adjust names if yours are different)
 env/
-envenv/
-venv/
 
 # IDE/editor
 .vscode/
