@@ -8,4 +8,6 @@ def avg_temp(*temps):
     average = sum(temps) / len(temps)
     return round(average, 1)
 
+
+print('average temperature')
 print(avg_temp(46, 46, 36.7, 34))

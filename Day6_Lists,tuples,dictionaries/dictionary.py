@@ -19,11 +19,11 @@
 
 #data for several. its better to use a list of dicts ({})
 #dont forget to separate with commas
-patients = (
+patients = [
     {'name' : 'Collan', 'age' : 21, 'ward' : 'A1', 'temp' : 36.2},
     {'name' : 'Eric', 'age' : 22, 'ward' : 'B2', 'temp' : 36.6},
     {'name' : 'Calvo', 'age' : 23, 'ward' : 'C3', 'temp' : 37.2},
-)
+]
 print(patients)
 
 for patient in patients:
