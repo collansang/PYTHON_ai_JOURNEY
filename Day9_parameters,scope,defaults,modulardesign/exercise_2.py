@@ -4,9 +4,9 @@ def add_item(cart = None, item_name = 'Unknown',qty = 1, price = 0.0, discount =
         cart= []
 
     for entry in cart:
-        if entry['name'].lower == item_name.lower():
+        if entry['name'].lower() == item_name.lower():
             entry["qty"] += qty
-        return cart
+            return cart
     
     new_item = {'name' : item_name, 'qty' : qty, 'price' : price, 'dsc' : discount}
     cart.append(new_item)
