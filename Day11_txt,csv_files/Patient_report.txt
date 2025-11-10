@@ -1,0 +1,5 @@
+Patients report summary
+==================================================
+collo - 38.0 - normal
+davis - 40.0 - hyperthermic
+john - 37.0 - normal
