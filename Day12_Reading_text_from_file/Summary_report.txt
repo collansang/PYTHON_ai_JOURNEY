@@ -1,0 +1,20 @@
+    ==============================PATIENTS SUMMARY REPORT====================
+Collan Sang - 38.4 - fever 
+Diana Chebet - 36.7 - normal 
+Grace Mwende - 39.1 - fever 
+Hellen Aoko - 35.9 - low 
+Irene Adhiambo - 37.5 - normal 
+Faith Achieng - 40.2 - fever 
+Brian Kiprotich - 34.8 - low 
+Mary Wambui - 37.1 - normal 
+Samuel Otieno - 39.6 - fever 
+Lilian Cherono - 36.4 - normal 
+Peter Njoroge - 38.9 - fever 
+Esther Wekesa - 35.5 - low 
+Victor Omondi - 37.9 - normal 
+Lucy Atieno - 39.3 - fever 
+Allan Kiptoo - 36.0 - low 
+====================================CATEGORY COUNTS======================================
+fever cases: 6
+normal cases : 5
+Low temperature cases 4
