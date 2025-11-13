@@ -1,0 +1,4 @@
+name,temperature,age,error_reason
+Kevin Otieno,N/A,35,invalid_temperature
+Brian Onyango,abc,40,invalid_temperature
+Mark Ochieng,not recorded,50,invalid_temperature

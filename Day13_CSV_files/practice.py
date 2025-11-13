@@ -15,38 +15,48 @@ import csv
 
 
 #Exercise 4 — Write to a New CSV
+try:
 
-def check_temp(temp):
-    if temp >37.5:
-        return "fever"
-    elif temp <= 36:
-        return "low temperature"
-    else:
-        return "normal temperature"
+    def check_temp(temp):
+            if temp >37.5:
+                return "fever"
+            elif temp <= 36:
+                return "low temperature"
+            else:
+                return "normal temperature"
 
 
-with open("patients.csv", "r") as file:
-    reader = csv.DictReader(file)
-
-    
-    names = ["name", "temperature", "condition"]
-    with open("summary.csv", "w", newline="") as out_file:
-       
-        writer = csv.DictWriter(out_file, fieldnames = names)
-        writer.writeheader()
+    with open("patients.csv", "r") as file:
+        reader = csv.DictReader(file)
         
-        for row in reader:
-            name = row["name"]
-            temperature = float(row["temperature"])
-            row["condition"] = check_temp(temperature)#added a new row   
+        names = ["name", "temperature", "condition"]
+        with open("summary.csv", "w", newline="") as out_file:
+        
+            writer = csv.DictWriter(out_file, fieldnames = names)
+            writer.writeheader()
             
-            filtered_row = {key:row[key] for key in writer.fieldnames}
-            writer.writerow(filtered_row)
-            
-            # writer.writerow({
-            #     "name" : row["name"],
-            #     "temperature" : row["temperature"],
-            #     "condition" : row["condition"]
-            # }) 
+            for row in reader:
+                name = row["name"]
+                try:
 
+                    temperature = float(row["temperature"])
+                except ValueError:
+                    print(f"skipping data for {row.get('name', 'unknown')} : {row["temperature"]} ")# find more about .get in notes.py
+                    continue
+                row["condition"] = check_temp(temperature)#added a new row   
+                
+                filtered_row = {key:row[key] for key in writer.fieldnames}
+                writer.writerow(filtered_row)# below os another way to do it
+                
+                # writer.writerow({
+                #     "name" : row["name"],
+                #     "temperature" : row["temperature"],
+                #     "condition" : row["condition"]
+                # }) 
+except FileNotFoundError:
+    print("file not found")
+except PermissionError:
+    print("you are not authorised for this access")
+except Exception as e:
+    print("Error:", e)
 
