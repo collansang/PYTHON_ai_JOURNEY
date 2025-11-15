@@ -1,0 +1,11 @@
+[
+  {
+    "name": "collan",
+    "age": 21,
+    "temperature": 38.0,
+    "status": "high temperature",
+    "symptoms": [
+      "cough"
+    ]
+  }
+]
