@@ -41,3 +41,7 @@ stu1= Students("Eric", 22,19865)
 print(stu1.get_adm())#ith help of getter we accessed adm
 stu1.set_adm(23452)#with the help of a setter wevw modified adm to 24
 print(stu1.get_adm())#we use get to access updated info
+
+
+
+#BUT NOW THIS METHOD IS OUTDATATED AND THERE IS A BETTER WAY TO DEAL WITH ENCAPSULATIONS @property check property file
