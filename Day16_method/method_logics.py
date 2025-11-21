@@ -13,7 +13,9 @@ class Patients():
         self.age = age
         self.weight = weight
         self.height = height
+        
         Patients.count +=1
+        Patients.registry.append(self)
 
         
         
@@ -38,7 +40,7 @@ class Patients():
         if not isinstance (value,(int,float)):
             raise ValueError("height must be a number")
         if not (0.5<= value <= 2.5):
-            raise ValueError("height must be betw 1 and 20 m")
+            raise ValueError("height must be betw 0.5 and 2.5 m")
         self.__height = float(value)
             
     @property
@@ -95,4 +97,4 @@ for p in Patients.overweight_patients():
 
 print("\nSearch for 'Amos':")
 for p in Patients.identify_by_name("Amos"):
-    print(p.name, p.age, p.bmi)
+    print(f"Name: {p.name}, Age: {p.age}, BMI: {p.bmi}")

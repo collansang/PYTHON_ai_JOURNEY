@@ -1,0 +1,59 @@
+Structure of the mini project 
+first we start with doctor and patient only and define relationships 
+
+
+
+1. Patient
+    personal data
+        id
+        name
+        age 
+        weight 
+        height 
+        bmi 
+        assigned doc 
+
+    health data
+    computed clinical metrics (BMI, risk score…)
+    appointments
+    medical history
+
+
+2. Doctor
+    id 
+    name 
+    specialty
+    schedules patients
+
+
+3. Appointment
+    patient
+    doctor
+    time
+    status
+
+
+4. MedicalRecord
+    diagnoses
+    prescriptions
+    visit notes
+
+
+5. Hospital / Clinic
+    patient registry
+    doctor registry
+    appointment management
+
+
+METHODS
+Patient methods 
+    update details 
+    compute bmi 
+    assign doc 
+    add medical record 
+
+Doctor methods 
+    add patient 
+    remove patient 
+    list patient 
+    
