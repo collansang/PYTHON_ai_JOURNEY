@@ -1,0 +1,25 @@
+dunder are magic methods that help us add special funtionalities to our classes
+
+They are many but below are few crucial
+
+
+dunder methods  = double underscore methods
+they automatically call by using built in python ops\
+    #allow developers to customize or define a behavior of an object
+
+
+1. MUST KNOW
+    __init__
+    __repr__  = debugging (representation)
+    __str__  = printing
+
+2. Comparison methods
+    __eq__ = comparisons, sets, removing dupcts
+    __lt__ = (less than) sorting
+
+3. Container methods
+    __len__
+    __getitem__
+
+4.callable
+    __call__    
