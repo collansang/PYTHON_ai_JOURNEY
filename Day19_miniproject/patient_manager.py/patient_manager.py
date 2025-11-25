@@ -11,10 +11,11 @@
 
 class Patients:
     count = 0
-    patients = []
     register = []
-    def __init__(self, name, age, temperature, weight, height):
-        self.name == name
+    def __init__(self, pid,name, age, temperature, weight, height):
+        self.name = name
+        self.id = pid
+        
         
         self.__age = None
         self.__temperature = None
@@ -26,6 +27,7 @@ class Patients:
         self.weight = weight
         self.height = height
         
+        self.patients = []
         Patients.count += 1
         Patients.register.append(self)
         
@@ -83,28 +85,38 @@ class Patients:
         self.__height = value    
 
 
-    def display_patients():
-        for p in Patients:
-            print(p.name, p.temperature, p.weight, p.height)
+    def display_patients(self):
+        for p in self.patients:
+            print(p.id, p.name, p.age)
         
 
         
-    def check_temp():
-        pass
+    def check_temp(self):
+        for p in self.patients:
+            if p.temperature <= 36:
+                status = "low temperature"
+            elif p.temperature > 37.5:
+                status =  "high temperature"
+            else:
+                status =  "normal temperature"
+            
+                
+            
+       
         
 
-    def add_patients():
+    def add_patients(self):
         pass
 
 
-    def update_patients():
+    def update_patients(self):
         pass
 
-    def search_patient():
+    def search_patient(self):
         pass
     
 
-    def remove_patients():
+    def remove_patients(self):
         pass
 
 

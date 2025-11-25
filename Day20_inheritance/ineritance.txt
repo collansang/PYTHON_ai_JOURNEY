@@ -1,0 +1,8 @@
+If B inherits from A, you are declaring something strong and permanent:
+    “Every B is an A, forever, conceptually.”
+If that isn't undeniably true, inheritance is the wrong tool.
+
+
+parent/base.super clases can have children/derived/subclasses class\
+    children classes inherit everything from parent class(attributes and methods)  
+    childen class can also have their own unique attributes and methods
