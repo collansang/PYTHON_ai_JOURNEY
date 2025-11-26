@@ -1,0 +1,20 @@
+A
+├── B
+└── C
+     └── D
+D inherits from B and C, but B and C inherits from A 
+D has 2 paths to A
+
+Be extremly careful when using multiple inheritance  to mimimise errore when testing
+
+If both parents define attributes, properties, or descriptors with the same name, the child class gets whichever version MRO picks.
+    You won’t even get an error.    
+    That’s exactly why multiple inheritance is dangerous — it fails quietly.
+
+
+IMPORTANCE OF MULTIPLE INHERITANCE
+    helps reuse small, stateless behavior components(MIXINS) without polluting your main inheritance tree \
+
+
+
+method resolution order(MRO )
