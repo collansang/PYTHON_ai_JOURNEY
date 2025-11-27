@@ -18,3 +18,5 @@ IMPORTANCE OF MULTIPLE INHERITANCE
 
 
 method resolution order(MRO )
+watch this video to get more info 
+https://www.youtube.com/watch?v=PSMYqfMP3Cs&t=438s

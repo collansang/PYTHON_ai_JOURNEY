@@ -24,3 +24,4 @@ class E(C):
 
 class F(D, E):
     pass
+print(F.mro())
