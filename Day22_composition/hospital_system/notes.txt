@@ -1,0 +1,21 @@
+CORE ENTITIES
+        Patient = patient 
+        VitalSigns = composition inside a patient 
+        Nurse = (aggregation) multiple nurses can be associated with patient 
+        Doctor = similar to nurse 
+        Medication & MedicationOrder = (aggregation) MedicationOrder uses Medication 
+        Ward / Bed = patients can occupy beds and beds belong to ward 
+        EDTeam/ Shift = composition of staff and equipments 
+
+
+RELATIONSHIPS
+        patient - vitalsigns = composition
+        patient - medicationorder = composition
+        MedicationOrder - Medication = aggregation
+        ward - Bed = composition 
+        ward - patient = aggregation 
+        EDTeam - nurse/Doctor = composition
+        EDTeam - equipments = aggregation
+        
+
+

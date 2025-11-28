@@ -1,0 +1,6 @@
+one class uses another class as part of  itself
+
+composition: when A is part of B 
+    A cannot exist without B 
+aggregation: A is linked/assovciated with B 
+    A can exist independetly of B 
