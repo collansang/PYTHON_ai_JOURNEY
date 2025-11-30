@@ -1,0 +1,17 @@
+abstraction is - generalization -to hide a complex logic
+                    works at design level 
+
+
+Mixins solve repetition.
+Abstract classes (ABCs) enforce structure.
+
+ABCs:
+    forces subclasses to impelemt required method guaranteeing consisten behavior across system 
+
+    where we might need it:
+        patient record object  must provide to_dict() method 
+        every model must implement predict() and train() 
+        every hospital worker must define work_shift() 
+
+
+A class becomes concrete (instantiable) only when every abstract method inherited from all parents has been implemented
