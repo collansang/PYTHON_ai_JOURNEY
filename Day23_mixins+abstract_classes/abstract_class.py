@@ -14,7 +14,7 @@ class Patient(Record): #class Patient must have methods to_dict and validate as 
         return {"name" : "john"}
     
     def validate(self):
-        return "ok"
+        return "Keep showwing up no matter how you feel"
 
 patient = Patient()
 print(patient.to_dict())

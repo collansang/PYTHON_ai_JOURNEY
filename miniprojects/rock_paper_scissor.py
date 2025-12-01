@@ -50,7 +50,7 @@ def play_game():
         display_choices(user_choice, computer_choice)
         
         while True:
-            should_continue = input("continue?y/n: ").lower().strip()
+            should_continue = input("continue? y/n: ").lower().strip()
             if should_continue == "n":
                 print("thank you for playing")
                 break            
@@ -61,3 +61,4 @@ def play_game():
         break
 explanation()
 play_game()
+

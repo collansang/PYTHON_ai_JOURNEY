@@ -1,16 +1,19 @@
+# If any parent class has already provided a concrete implementation of an abstract method, subclasses DO NOT need to implement it again.
 
 from abc import ABC, abstractmethod
 
-class Record(ABC):
+class A(ABC):
     @abstractmethod
-    def save(self, data):
+    def to_dict(self):
         pass
+    
+class B(A):
+    def to_dict(self):
+        return "If you gonna start something, finish it, otherwise dont even start"
+class C(B):
+    pass
 
-class Patient(Record):
-    def save(self): 
-        return {"name": "Alice"}# ❌ missing data parameter
-        
-
-
-patient = Patient()
-print(patient.save())
+c= C()
+print(c.to_dict())
+    
+    
