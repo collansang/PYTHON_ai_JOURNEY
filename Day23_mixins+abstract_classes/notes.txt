@@ -1,8 +1,21 @@
 abstraction is - generalization -to hide a complex logic
                     works at design level 
 
+WHAT YOU SHOULD KNOW ABOUT ABSTRACT CLASSES 
+    A class becomes abstract if it contains ANY abstract method/property.
+    You cannot instantiate a class with unimplemented abstract methods.
+    Abstract properties require at least the getter.
+    Implementing only a setter DOES NOT override an abstract property.
+    Only the class that implements everything is instantiable.
 
-Mixins solve repetition.
+WHAT YOU SHOULD KNOW ABOUT MIXINS 
+    Mixins should be tiny, single-purpose.
+    Mixins do NOT define __init__.
+    Mixins assume the main class already has needed attributes.
+    Mixins should NEVER be used alone — always alongside a main class.
+    Mixins solve repetition.
+
+
 Abstract classes (ABCs) enforce structure.
 
 ABCs:
