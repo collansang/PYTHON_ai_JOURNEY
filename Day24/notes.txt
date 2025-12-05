@@ -1,0 +1,16 @@
+Error handling is crucial in development.
+it helps solve alot of problems if implemented properly 
+
+1. Define a custon exception hierachy
+    go fo domain specific exceptions eg:
+        ValidationError
+        ValueOutOfRangeError
+        PatientNotFoundError
+        DatabaseError
+        AuthError
+            etc....
+
+Logging is important
+
+
+        
