@@ -80,15 +80,15 @@ appointment = {
 
 
 
-def require_role(user_id : str, allowed_role = list[str]):
+def require_role(user_id : str, allowed_role : list[str]):
     
-    if user_id not in allowed_role:
+    if user_id not in users:
         raise AuthorizationError(f"{user_id} not logged in or does not exist")
     
-    role = users[user_id]["role"]
+    user_role = users[user_id]["role"]
     
-    if role not in allowed_role:
-        raise PermissionError("{role} not allowed to perform thisaction")
+    if user_role not in allowed_role:
+        raise RolePermissionError(f"Role '{user_role}' is not allowed to perform this action")
     
 
 def register_patient(user_id : str, patient_id: str, name : str, age : int):
@@ -121,36 +121,6 @@ def prescribe_medication(user_id : str,patient_id : str, medication_a : str, med
     
     
     
-# def main():
-#     try:
-#         register_patient('admin1','p001', 'Alice', 22)
-#     except DuplicatePatientError as e:
-#         print(f"Duplicate patient error: {e}")
-#     except ConflictError as e:
-#         print(f"Conflict error: {e}")
-#     except HospitalError as e:
-#         print(f"Hospital error: {e}")  
-    
-#     try:
-#         register_doctor('admin1','d001', 'Dr. Smith', 'Dermatology')
-#     except DuplicateDoctorError as e:
-#         print(f"Duplicate doctor error: {e}")
-#     except ConflictError as e:
-#         print(f"Conflict error: {e}")
-#     except HospitalError as e:
-#         print(f"Hospital error: {e}")
-    
-#     try:
-#         book_appointment('reception1','a004', patient_id='p002', doctor_id='d002', date='2025-10-05')
-#     except AppointmentConflictError as e:
-#         print(f"Appointment conflict error: {e}")
-#     except ConflictError as e:
-#         print(f"Conflict error: {e}")
-#     except HospitalError as e:
-#         print(f"Hospital error: {e}")
-        
-# main()
-        
     
 def main1():
     try:
