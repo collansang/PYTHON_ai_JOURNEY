@@ -1,0 +1,1 @@
+#DESERIALIZATION = Deserialization is the controlled reconstruction of full Python objects from serialized data, restoring structure, type, and behavior that JSON cannot store.
