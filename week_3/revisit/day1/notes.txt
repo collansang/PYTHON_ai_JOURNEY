@@ -1,0 +1,13 @@
+JSON is a file that we use to store data
+the reason we use files is because memory disapperars when programms stops so JSON file is used because its reliable and stays when program stops
+in ram(memory) = Patients = []
+in files = patients.json
+objects live in ram files live in disk
+
+
+why we loop
+We loop explicitly over patients to maintain full control over data transformation, enforce schemas and validation, handle errors per record, apply domain-specific rules, and remain independent of the storage format. JSON is a passive data container and cannot enforce any of these requirements.
+
+why handling JSON in main.py is not a good idea 
+Handling JSON directly in main.py causes duplicated I/O logic, tightly couples core application flow to a specific storage format, makes testing difficult due to file system dependencies, and violates separation of responsibilities. Persistence should be isolated behind a repository so the rest of the system remains stable when storage changes.
+

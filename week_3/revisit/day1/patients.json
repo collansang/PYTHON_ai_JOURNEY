@@ -1,0 +1,17 @@
+[
+    {
+        "patient_id": 1,
+        "name": "Collo",
+        "age": 21
+    },
+    {
+        "patient_id": 2,
+        "name": "Moses",
+        "age": 22
+    },
+    {
+        "patient_id": 3,
+        "name": "Enock",
+        "age": 23
+    }
+]
