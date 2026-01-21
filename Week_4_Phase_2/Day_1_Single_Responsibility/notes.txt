@@ -1,0 +1,1 @@
+Single responsibility = A unit has one reason to change
