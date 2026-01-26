@@ -1,0 +1,28 @@
+Liskov Substituition Principle
+
+It’s about behavioral contracts staying intact under substitution
+
+If your system expects MedicationOder:
+    every subclass must:
+        Preserve meaning
+        Preserve constraints
+        Preserve side effects
+        Preserve failure modes
+
+Reject inheritance if ANY of the following are true:
+    Rule 1: Subclass changes meaning
+        If a subclass reinterprets:
+            Units
+            Thresholds
+            Clinical intent
+            → No inheritance
+
+    Rule 2: Subclass adds constraints
+        Example:
+            “This medication must be administered with food”
+            “Only valid for neonates”
+            That tightens the contract → LSP violation
+    
+    Rule 3: Subclass removes behavior
+        If something valid in base class becomes invalid:
+        → Inheritance is illegal
