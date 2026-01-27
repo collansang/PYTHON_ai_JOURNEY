@@ -1,0 +1,2 @@
+Interface segregation principle
+Its better to have many classes that are small than few classes with many instances
