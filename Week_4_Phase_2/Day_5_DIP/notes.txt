@@ -1,0 +1,5 @@
+Dependency Inversion (Clinical Assumptions):    
+    Clinical decisions must depend on explicit assumptions, not concrete sources
+    Guidelines, thresholds, time, and population definitions are dependencies
+    Inject assumptions so they can be audited, swapped, and challenged
+    A decision system without visible assumptions is unsafe by default
