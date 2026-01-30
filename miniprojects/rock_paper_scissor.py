@@ -53,12 +53,14 @@ def play_game():
             should_continue = input("continue? y/n: ").lower().strip()
             if should_continue == "n":
                 print("thank you for playing")
-                break            
+                return
+                
             elif should_continue == "y":
                 play_game()
+                return
             else:
                 print("wrong choice")
-        break
+            break
 explanation()
 play_game()
 
