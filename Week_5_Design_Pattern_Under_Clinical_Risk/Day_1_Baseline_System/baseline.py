@@ -1,4 +1,4 @@
-"""Baseline Clinical Decissio System (CDS) module.
+"""Baseline Clinical Decision System (CDS) module.
 Purpose:
     -Preserve explicit clinical reasoning
     -Preserve priority ordering
