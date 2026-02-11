@@ -1,0 +1,28 @@
+Architecture
+    has four mandatory layers, but with metadata flowing through all of them.
+
+1. Ingestion (Raw Clinical Fact Layer)
+    Must preserve:
+        observed_at (when measurement was taken)
+        available_at (when system knew it)
+        source system
+        measurement reliability
+        missingness_reason (if absent)
+2. Temporal Gate (Pre/Post Diagnosis Firewall)
+    Before transformation:
+        You must explicitly tag every datum:
+                data.is_pre_diagnosis
+                data.is_post_diagnosis
+3. Transformation (Context-Aware, Not Cosmetic)
+    Transformation must:
+        Declare what decision it supports
+        Log what it changes
+        Preserve original value
+        Preserve reliability
+
+4. Validation (Clinical Integrity Layer)
+    Validation must check:
+        Was data available at decision time?
+        Is missingness explained?
+        Is reliability above threshold?
+        Is this measurement clinically valid for the decision?
