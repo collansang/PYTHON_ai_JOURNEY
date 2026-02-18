@@ -1,0 +1,34 @@
+{
+    "2026-02-16": {
+        "lessons": [
+            "obs",
+            "gyn",
+            "research methodology"
+        ],
+        "planned_hours": 6.0,
+        "actual_hours": 4.0,
+        "attention_percent": 90.0,
+        "consistency_ratio": 0.67,
+        "focus_score": 3.6
+    },
+    "2026-02-17": {
+        "lessons": [
+            "research methodology"
+        ],
+        "planned_hours": 4.0,
+        "actual_hours": 3.0,
+        "attention_percent": 70.0,
+        "consistency_ratio": 0.75,
+        "focus_hours": 2.1
+    },
+    "2026-02-18": {
+        "lessons": [
+            "research methodology"
+        ],
+        "planned_hours": 1.0,
+        "actual_hours": 1.0,
+        "attention_percent": 80.0,
+        "consistency_ratio": 1.0,
+        "focus_hours": 0.8
+    }
+}
